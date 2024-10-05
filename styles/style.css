@@ -138,7 +138,7 @@
 .article__title {
   border-block-end: 2px solid var(--text-color);
   padding: 3px 10px;
-  font-weight: var(--title-font-weight);
+  font-variation-settings: 'wght' var(--title-font-weight);
   font-size: 18px;
   line-height: 21px;
 }
@@ -168,6 +168,7 @@
   padding: 25px 25px 0 25px;
   font-size: 18px;
   line-height: 21px;
+  font-variation-settings: 'wght' var(--text-font-weight);
 }
 
 .button__body {
