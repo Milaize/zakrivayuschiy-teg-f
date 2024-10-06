@@ -332,10 +332,10 @@
 .dialog__text {
   color: var(--text-color);
   font-family: var(--accent-font), sans-serif;
-  font-size: clamp(12.375rem, 11.5827rem + 3.3803vw, 14.625rem);
+  font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  max-inline-size: 234px;
+  max-inline-size: clamp(12.375rem, 11.5827rem + 3.3803vw, 14.625rem);
 }
 
 .dialog__button {
