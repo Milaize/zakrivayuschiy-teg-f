@@ -7,7 +7,7 @@
   background-attachment: fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-variation-settings: 'wght' var(--text-font-weight);
+  font-variation-settings: "wght" var(--text-font-weight);
 }
 
 .decorated-zone {
@@ -59,9 +59,9 @@
   font-size: 14px;
   text-transform: uppercase;
   background: transparent;
+  transition: opacity 0.3s ease;
   cursor: pointer;
   appearance: none;
-  transition: opacity 0.3s ease;
 }
 
 .theme-menu__button:hover {
@@ -69,10 +69,10 @@
 }
 
 .theme-menu__button:disabled::before {
-  content: '▶';
+  content: "▶";
   position: absolute;
-  left: -19px;
   bottom: 2px;
+  left: -19px;
   animation: arrow 0.5s ease-in-out infinite alternate;
   aspect-ratio: 1/1;
 }
@@ -83,15 +83,15 @@
   pointer-events: none;
 }
 
-.theme-menu__button:enabled::after { 
-  content: ""; 
-  display: block; 
-  transition: transform 0.3s ease; 
-  transform: scaleX(0); 
-  transform-origin: left; 
-  block-size: 2px; 
+.theme-menu__button:enabled::after {
+  content: "";
+  display: block;
+  transition: transform 0.3s ease;
+  transform: scaleX(0);
+  transform-origin: left;
+  block-size: 2px;
   inline-size: 100%;
-} 
+}
 
 .theme-menu__button:focus {
   outline: none;
@@ -123,9 +123,9 @@
 .article__title {
   border-block-end: 2px solid var(--text-color);
   padding: 3px 10px;
-  font-variation-settings: 'wght' var(--title-font-weight);
   font-size: 18px;
   line-height: 21px;
+  font-variation-settings: "wght" var(--title-font-weight);
 }
 
 .img__wrapper {
@@ -179,8 +179,8 @@
 
 .card__like-button {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   min-block-size: 38px;
   min-inline-size: 130px;
 }
@@ -203,14 +203,14 @@
 
 .button-svg {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  margin-inline-end: 3px;
   fill: var(--button-text-color);
   block-size: 21px;
   inline-size: 21px;
   mix-blend-mode: difference;
   max-block-size: 38px;
-  margin-inline-end: 3px;
 }
 
 .button:focus {
@@ -332,7 +332,7 @@
 .dialog__text {
   color: var(--text-color);
   font-family: var(--accent-font), sans-serif;
-  font-size: 14px;
+  font-size: clamp(12.375rem, 11.5827rem + 3.3803vw, 14.625rem);
   line-height: 21px;
   text-transform: uppercase;
   max-inline-size: 234px;
@@ -340,9 +340,9 @@
 
 .dialog__button {
   border-color: var(--text-color);
-  inline-size: 100%;
-  text-transform: uppercase;
   padding: 9px;
+  text-transform: uppercase;
+  inline-size: 100%;
 }
 
 .dialog__icon {
@@ -366,17 +366,15 @@
     block-size: 28px;
     inline-size: 28px;
   }
-
 }
-
 
 @supports (
   (text-stroke: 1px var(--bg-color)) or
     (-webkit-text-stroke: 1px var(--bg-color))
 ) {
   .img__label {
+    text-shadow: none;
     -webkit-text-stroke: 1px var(--bg-color);
     text-stroke: 1px var(--bg-color);
-    text-shadow: none;
   }
 }
