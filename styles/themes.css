@@ -53,3 +53,24 @@
       --sparks: #ff0000;
 }
 }
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --title-font-weight: 700;
+    --text-font-weight: 400;
+    --button-text-color: var(--bg-white, #fff);
+    --text-color: var(--text-black, #000000);
+    --bg-color: var(--bg-white, #ffffff);
+    --background-image: repeating-linear-gradient(
+        to left,
+        #d3d3d3 0 2px,
+        transparent 2px 4px
+      ),
+      repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+      linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+      ---main-body: none;
+      --contour: var(--text-color);
+      --sparks: #ff0000;
+  }
+}
