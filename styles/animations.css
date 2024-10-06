@@ -8,6 +8,11 @@
 }
 
 /* состояния и анимация сердечка */
+
+.heart {
+  transform-origin: center;
+}
+
 .contour {
   transition: fill 0.1s linear;
 }
@@ -71,7 +76,6 @@
   }
   to {
     transform: scale(1.5);
-    transform-origin: center;
   }
 }
 
