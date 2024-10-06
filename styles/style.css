@@ -192,6 +192,8 @@
   transition: border-color 0.3s ease;
   cursor: pointer;
   appearance: none;
+  max-block-size: 38px;
+  margin-inline-end: 3px;
 }
 
 .button__text {
@@ -205,12 +207,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-inline-end: 3px;
   fill: var(--button-text-color);
   block-size: 21px;
   inline-size: 21px;
   mix-blend-mode: difference;
-  max-block-size: 38px;
 }
 
 .button:focus {
