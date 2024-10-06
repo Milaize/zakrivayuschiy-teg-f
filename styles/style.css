@@ -324,7 +324,7 @@
 }
 
 .dialog__icon {
-  color: var(--text-color);
+  fill: var(--text-color);
   inline-size: 39px;
   block-size: 39px;
 }
@@ -343,10 +343,6 @@
   padding: 9px;
   text-transform: uppercase;
   inline-size: 100%;
-}
-
-.dialog__icon {
-  fill: var(--text-color);
 }
 
 @media (width <= 375px) {
