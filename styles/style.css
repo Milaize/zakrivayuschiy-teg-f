@@ -114,7 +114,7 @@
 
 .card__list {
   display: grid;
-  gap: 52px;
+  gap: 51px;
 }
 
 .article {
@@ -155,7 +155,7 @@
   flex-direction: column;
   gap: 27px;
   border-block-start: 2px solid var(--text-color);
-  padding: 25px 25px 0 25px;
+  padding: 25px 25px 5px 25px;
   font-size: 18px;
   line-height: 21px;
 }
@@ -187,14 +187,16 @@
 }
 
 .card__icon-button {
-  display: grid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline-end: 3px;
   border: 2px solid transparent;
   background: transparent;
   transition: border-color 0.3s ease;
   cursor: pointer;
   appearance: none;
   max-block-size: 38px;
-  margin-inline-end: 3px;
 }
 
 .button__text {
@@ -296,6 +298,11 @@
   -moz-filter: hue-rotate(90deg) brightness(90%);
 }
 
+.heart {
+  width: 27px;
+  height: 24px;
+}
+
 .sparks {
   opacity: 0;
 }
@@ -346,9 +353,25 @@
   inline-size: 100%;
 }
 
-@media (width <= 375px) {
+@media (width < 376px) {
   .header {
-    margin-block-start: 105px;
+    margin-block-start: 99px;
+  }
+
+  .content {
+    padding-block-end: 99px;
+  }
+
+  .card__content {
+    padding: 25px 25px 25px 25px;
+  }
+
+  .card__list {
+    gap: 51px;
+  }
+
+  .article__title {
+    padding-bottom: 6px;
   }
 
   .img__label {
@@ -362,6 +385,14 @@
   .button-svg {
     block-size: 28px;
     inline-size: 28px;
+  }
+
+  .button__body {
+    padding: 0 25px 25px 25px;
+  }
+
+  .dialog {
+    padding: 30px 30px 30px 38px;
   }
 }
 
